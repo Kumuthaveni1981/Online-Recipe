@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Recipe Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6f0;
+            color: #333;
+        }
+
+        header {
+            background-image: url('image1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            text-align: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.05);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-card .content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .recipe-card h3 {
+            margin: 0 0 10px;
+            color: #e85a4f;
+        }
+
+        .recipe-card p {
+            margin: 0;
+            color: #555;
+        }
+
+        .gif-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .gif-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #e85a4f;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fork && Pixels</h1>
+        <p>Discover, create, and manage your favorite recipes!</p>
+    </header>
+
+    <main>
+        <section class="recipe-grid">
+            <div class="recipe-card">
+                <img src="d:/images/recipe1.jpg" alt="Recipe 1">
+                <div class="content">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>A creamy delight with a hint of bacon.</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="d:/images/recipe2.jpg" alt="Recipe 2">
+                <div class="content">
+                    <h3>Vegetable Stir Fry</h3>
+                    <p>Healthy, colorful, and delicious!</p>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="d:/images/recipe3.jpg" alt="Recipe 3">
+                <div class="content">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>A rich, molten chocolate experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gif-section">
+            <h2>Cooking Inspiration</h2>
+            <p>Need some motivation? Watch this!</p>
+            <img src="d:/images/inspiration.gif" alt="Cooking GIF">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Recipe Manager | <a href="#">Contact Us</a></p>
+    </footer>
+</body>
+</html>
